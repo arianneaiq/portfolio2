@@ -4,7 +4,7 @@ background-color: black;}
 
   .topnav {
     overflow: hidden;
-    background-color: red;
+    background-color: black;
     
   }
   
@@ -31,53 +31,64 @@ background-color: black;}
   }
 
   .homeMid{
-      position: absolute;
-      background-color: seagreen;
-      width: 700px;
-      height: 500px;
-      top:20%;
-      left:22%;
-      
+      position:absolute;
+      width: 632px;
+      height: 337px;
+      top:50%;
+      left:50%;
+      margin-left: -316px;
+margin-top: -168.5px
   }
 
   h1{
     position: relative;
-    background-color: red;
-  text-align: center;
-  font: normal normal normal 100px SF Pro;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  text-transform: capitalize;
-  opacity: 1;
-}
+    text-align: center;
+    font: normal normal bold 100px/30px Cochin;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+margin-top: 100px;
+  }
 
 h3{
-    position: relative;
-text-align: center;
-font: normal normal normal 60px SF Pro;
-letter-spacing: 0px;
-color: #FFFFFF9F;
-opacity: 1;
+  position: relative;
+  text-align: center;
+  font: normal normal normal 30px/0px Helvetica;
+  font-family: Helvetica;
+  color: #FFFFFF9F;
+  opacity: 1;
+  margin-bottom: 70px;
 }
+
+.leeruitkomstBtn, .overMijBtn{
+  position: relative;
+  width: 250px;
+height: 70px;
+padding: 10px 40px 10px 40px;
+border-radius: 15px;
+font: normal normal normal 25px/48px Helvetica;
+text-align: center;
+}
+
+.leeruitkomstBtn{
+  background: #FF9898 0% 0% no-repeat padding-box;
+  float: left;
+  border: none;
+}
+
+.overMijBtn{
+  float: right;
+  background: #020202 0% 0% no-repeat padding-box;
+border: 2px solid #FE9898;
+color: #FFFFFF;
+}
+
   
   @media screen and (max-width: 790px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
-    }
-
-    .homeMid{
-      width: 400px;
-      height: 200px;
-    }
-
-    h1{
-        font-size: 50px;
-    }
-
-    h3{
-        font-size: 30px;
     }
   }
   
@@ -93,6 +104,34 @@ opacity: 1;
       display: block;
       text-align: left;
     }
-  }
+
+    .homeMid{  
+      width: 400px;
+      height: 200px;
+      margin-left: -200px;
+margin-top: -200px
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h3{
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+
+    .leeruitkomstBtn, .overMijBtn{
+      position: relative;
+      width: 125px;
+    height: 35px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 7.5px;
+    font: normal normal normal 13px/24px Helvetica;
+    text-align: center;
+    }
+
+    
+}
 
  
