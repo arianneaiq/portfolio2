@@ -40,7 +40,7 @@ background-color: black;}
 margin-top: -168.5px
   }
 
-  h1{
+  .homeMid h1{
     position: relative;
     text-align: center;
     font: normal normal bold 100px/30px Cochin;
@@ -50,7 +50,7 @@ opacity: 1;
 margin-top: 100px;
   }
 
-h3{
+.homeMid h3{
   position: relative;
   text-align: center;
   font: normal normal normal 30px/0px Helvetica;
@@ -83,7 +83,44 @@ border: 2px solid #FE9898;
 color: #FFFFFF;
 }
 
-  
+.overMijContent{
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mijFoto img{
+  position: relative;
+  margin-top:3%;
+margin-left: 10%;
+width: 400px;
+height: 600px;
+
+object-fit: cover;
+box-shadow: 0px 3px 6px #FFFFFF5C;
+border-radius: 23px;
+opacity: 1;
+}
+
+.overMij p{
+  top:20%;
+  position: relative;
+width: 400px;
+height: 364px;
+text-align: left;
+font: normal normal normal 20px/30px Helvetica;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+.overMij h3{
+  font: normal normal bold 50px/0px Cochin;
+  color: #FFFFFF;
+}
+
+
+ 
   @media screen and (max-width: 790px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
