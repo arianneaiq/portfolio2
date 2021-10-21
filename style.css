@@ -44,7 +44,7 @@ margin-top: -168.5px
     position: relative;
     text-align: center;
     font: normal normal bold 100px/30px Cochin;
-letter-spacing: 0px;
+
 color: #FFFFFF;
 opacity: 1;
 margin-top: 100px;
@@ -83,30 +83,27 @@ border: 2px solid #FE9898;
 color: #FFFFFF;
 }
 
-.overMijContent{
+.grid-container {
   display: grid;
-  grid-auto-rows: 200px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 400px 500px;
+  grid-template-rows: 600px;
+  padding: 50px 50px 50px 100px;
+  grid-gap: 0px 120px;
+
+  align-content: center;
 }
 
-.mijFoto img{
-  position: relative;
-  margin-top:5%;
-margin-left: 20%;
+
+.mijFoto{
 width: 400px;
 height: 600px;
-
-object-fit: cover;
-box-shadow: 0px 3px 6px #FFFFFF5C;
+background: url('img/IMG_1769\ 2.jpg') center center;
+  background-size: cover;
 border-radius: 23px;
 opacity: 1;
 }
 
 .overMij p{
-  top:20%;
-  position: relative;
-width: 400px;
-height: 364px;
 text-align: left;
 font: normal normal normal 20px/30px Helvetica;
 letter-spacing: 0px;
@@ -114,8 +111,9 @@ color: #FFFFFF;
 opacity: 1;
 }
 
-.overMij h3{
-  font: normal normal bold 50px/0px Cochin;
+.overMij h1{
+  margin-top: 100px;
+  font: normal normal bold 50px/70px Cochin;
   color: #FFFFFF;
 }
 
@@ -149,11 +147,11 @@ opacity: 1;
 margin-top: -200px
     }
 
-    h1{
+    .homeMid h1{
         font-size: 50px;
     }
 
-    h3{
+    .homeMid h3{
         font-size: 15px;
         margin-bottom: 35px;
     }
