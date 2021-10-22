@@ -1,14 +1,15 @@
-   body{margin: 0;
-padding: 0;
-background-color: black;}
-
-  .topnav {
-    overflow: hidden;
+body {
+    margin: 0;
+    padding: 0;
     background-color: black;
-    
-  }
-  
-  .topnav a {
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.topnav a {
     float: right;
     display: block;
     color: #ffffff;
@@ -16,157 +17,173 @@ background-color: black;}
     padding: 20px 40px;
     text-decoration: none;
     font: normal normal normal 30px/48px Helvetica;
-  }
+}
 
-  .topnav .logo{
-      float: left;
-  }
-  
-  .topnav a:hover {
+.topnav .logo {
+    float: left;
+}
+
+.topnav a:hover {
     color: #FF9898;
-  }
-  
-  .topnav .icon {
+}
+
+.topnav .icon {
     display: none;
-  }
+}
 
-  .homeMid{
-      position:absolute;
-      width: 632px;
-      height: 337px;
-      top:50%;
-      left:50%;
-      margin-left: -316px;
-margin-top: -168.5px
-  }
+.homeMid {
+    position: absolute;
+    width: 632px;
+    height: 337px;
+    top: 50%;
+    left: 50%;
+    margin-left: -316px;
+    margin-top: -168.5px
+}
 
-  .homeMid h1{
+.homeMid h1 {
     position: relative;
     text-align: center;
     font: normal normal bold 100px/30px Cochin;
-
-color: #FFFFFF;
-opacity: 1;
-margin-top: 100px;
-  }
-
-.homeMid h3{
-  position: relative;
-  text-align: center;
-  font: normal normal normal 30px/0px Helvetica;
-  font-family: Helvetica;
-  color: #FFFFFF9F;
-  opacity: 1;
-  margin-bottom: 70px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 100px;
 }
 
-.leeruitkomstBtn, .overMijBtn{
-  position: relative;
-  width: 250px;
-height: 70px;
-padding: 10px 40px 10px 40px;
-border-radius: 15px;
-font: normal normal normal 25px/48px Helvetica;
-text-align: center;
+.homeMid h3 {
+    position: relative;
+    text-align: center;
+    font: normal normal normal 30px/0px Helvetica;
+    font-family: Helvetica;
+    color: #FFFFFF9F;
+    opacity: 1;
+    margin-bottom: 70px;
 }
 
-.leeruitkomstBtn{
-  background: #FF9898 0% 0% no-repeat padding-box;
-  float: left;
-  border: none;
+.leeruitkomstBtn,
+.overMijBtn {
+    position: relative;
+    width: 250px;
+    height: 70px;
+    padding: 10px 40px 10px 40px;
+    border-radius: 15px;
+    font: normal normal normal 25px/48px Helvetica;
+    text-align: center;
 }
 
-.overMijBtn{
-  float: right;
-  background: #020202 0% 0% no-repeat padding-box;
-border: 2px solid #FE9898;
-color: #FFFFFF;
+.leeruitkomstBtn {
+    background: #FF9898 0% 0% no-repeat padding-box;
+    float: left;
+    border: none;
+}
+
+.leeruitkomstBtn:hover {
+    background: #020202 0% 0% no-repeat padding-box;
+    border: 2px solid #FE9898;
+    color: #FFFFFF;
+}
+
+.overMijBtn {
+    float: right;
+    background: #020202 0% 0% no-repeat padding-box;
+    border: 2px solid #FE9898;
+    color: #FFFFFF;
+}
+
+.overMijBtn:hover {
+    background: #FF9898 0% 0% no-repeat padding-box;
+    color: #000;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 400px 500px;
-  grid-template-rows: 600px;
-  padding: 50px 50px 50px 100px;
-  grid-gap: 0px 120px;
-
-  align-content: center;
+    display: grid;
+    grid-template-columns: 400px 500px;
+    grid-template-rows: 600px;
+    padding: 50px 50px 50px 100px;
+    grid-gap: 0px 120px;
+    align-content: center;
 }
 
-
-.mijFoto{
-width: 400px;
-height: 600px;
-background: url('img/IMG_1769\ 2.jpg') center center;
-  background-size: cover;
-border-radius: 23px;
-opacity: 1;
+.mijFoto {
+    width: 400px;
+    height: 600px;
+    background: url('img/IMG_1769\ 2.jpg') center center;
+    background-size: cover;
+    border-radius: 23px;
+    opacity: 1;
 }
 
-.overMij p{
-text-align: left;
-font: normal normal normal 20px/30px Helvetica;
-letter-spacing: 0px;
-color: #FFFFFF;
-opacity: 1;
+.overMij p {
+    text-align: left;
+    font: normal normal normal 20px/30px Helvetica;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
-.overMij h1{
-  margin-top: 100px;
-  font: normal normal bold 50px/70px Cochin;
-  color: #FFFFFF;
+.overMij h1 {
+    margin-top: 100px;
+    font: normal normal bold 50px/70px Cochin;
+    color: #FFFFFF;
 }
 
-
- 
-  @media screen and (max-width: 790px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
+@media screen and (max-width: 790px) {
+    .topnav a:not(:first-child) {
+        display: none;
     }
-  }
-  
-  @media screen and (max-width: 790px) {
-    .topnav.responsive {position: relative;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .topnav.responsive {
+        position: relative;
+    }
     .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
     }
-
-    .homeMid{  
-      width: 400px;
-      height: 200px;
-      margin-left: -200px;
-margin-top: -200px
+    .homeMid {
+        width: 400px;
+        height: 200px;
+        margin-left: -200px;
+        margin-top: -200px
     }
-
-    .homeMid h1{
-        font-size: 50px;
+    .homeMid h1 {
+        font-size: 60px;
     }
-
-    .homeMid h3{
-        font-size: 15px;
-        margin-bottom: 35px;
+    .homeMid h3 {
+        font-size: 20px;
+        margin-bottom: 45px;
     }
-
-    .leeruitkomstBtn, .overMijBtn{
-      position: relative;
-      width: 125px;
-    height: 35px;
-    padding: 5px 20px 5px 20px;
-    border-radius: 7.5px;
-    font: normal normal normal 13px/24px Helvetica;
-    text-align: center;
+    .leeruitkomstBtn,
+    .overMijBtn {
+        position: relative;
+        width: 165px;
+        height: 45px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 7.5px;
+        font: normal normal normal 13px/24px Helvetica;
+        text-align: center;
     }
-
-    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 600px 300px;
+        padding: 50px 50px 0px 100px;
+        align-content: center;
+    }
+    .overMij h1 {
+        margin-top: 50px;
+        font: normal normal bold 50px/70px Cochin;
+        color: #FFFFFF;
+    }
 }
-
- 

@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.topnav a,
+.homeMid h1,
+.overMij p,
+.overMij h1 {
+    color: #000;
+}
+
+.homeMid h3 {
+    color: #707070;
+}
+
+.leeruitkomstBtn {
+    background: #FF9898 0% 0% no-repeat padding-box;
+    float: left;
+    border: none;
+}
+
+.leeruitkomstBtn:hover {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #FE9898;
+    color: #000;
+}
+
+.overMijBtn {
+    float: right;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #FE9898;
+    color: #000;
+}
+
+.overMijBtn:hover {
+    background: #FF9898 0% 0% no-repeat padding-box;
+    color: #000;
+}
