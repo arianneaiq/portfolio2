@@ -2,6 +2,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    color: white;
+}
+
+a{
+    color:white;
 }
 
 .topnav {
@@ -12,9 +17,9 @@ body {
 .topnav a {
     float: right;
     display: block;
-    color: #ffffff;
     text-align: center;
     padding: 20px 40px;
+    color: white;
     text-decoration: none;
     font: normal normal normal 30px/48px Helvetica;
 }
@@ -31,6 +36,15 @@ body {
     display: none;
 }
 
+ul a {
+    text-decoration:none;
+    display: inline-block;
+    margin-right: 10px;
+    font: normal normal normal 15px/0px Helvetica;
+}
+.active{
+    color:#FE9898;
+}
 .homeMid {
     position: absolute;
     width: 632px;
@@ -45,7 +59,6 @@ body {
     position: relative;
     text-align: center;
     font: normal normal bold 100px/30px Cochin;
-    color: #FFFFFF;
     opacity: 1;
     margin-top: 100px;
 }
@@ -78,14 +91,14 @@ body {
 }
 
 .leeruitkomstBtn:hover {
-    background: #020202 0% 0% no-repeat padding-box;
+    background: transparent 0% 0% no-repeat padding-box;
     border: 2px solid #FE9898;
     color: #FFFFFF;
 }
 
 .overMijBtn {
     float: right;
-    background: #020202 0% 0% no-repeat padding-box;
+    background: transparent 0% 0% no-repeat padding-box;
     border: 2px solid #FE9898;
     color: #FFFFFF;
 }
@@ -121,12 +134,120 @@ body {
     opacity: 1;
 }
 
-.overMij h1 {
+.overMij h2 {
     margin-top: 100px;
     font: normal normal bold 50px/70px Cochin;
     color: #FFFFFF;
 }
 
+h2{
+    font: normal normal bold 50px/50px Cochin;
+    color: #ffffff;
+    text-align: center;
+}
+ h2 i{
+    margin-right:20px ;
+}
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 180px 180px;
+    height: 450px;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
+
+  .grid-item a button{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      border-radius: 18px;
+      font: normal normal normal 25px/48px Helvetica;
+      color: black;
+      border: none;
+  }
+
+  .grid-item a button i{
+      font-size: 40px;
+  }
+
+  .item1{
+    background: #FFEC9A 0% 0% no-repeat padding-box;
+  }
+
+  .item2{
+    background: #E1B1FF 0% 0% no-repeat padding-box;
+  }
+
+  .item3{
+    background: #FFBEEE 0% 0% no-repeat padding-box;
+  }
+
+  .item4{
+    background: #C6FFD5 0% 0% no-repeat padding-box;
+  }
+
+  .item5{
+    background: #FFC4C4 0% 0% no-repeat padding-box;
+  }
+
+  .item6{
+    background: #A3C0FF 0% 0% no-repeat padding-box;
+  }
+
+  .grid-container-2{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 300px 300px;
+    padding: 10px 100px 10px 100px;
+    background-color: red;
+    grid-gap:50px 80px;
+    justify-content: center;
+
+  }
+
+  .grid-container-2 div{
+      background-color: rosybrown;
+      border: 1px blue;
+  }
+
+@media screen and (max-width: 1200px) {
+    .grid-container-1 {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 160px 160px;
+        width: 100%;
+        height: 450px;
+      }
+      .grid-item a button{
+        border-radius: 15px;
+        font: normal normal normal 22px/48px Helvetica;
+    }
+  
+    .grid-item a button i{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grid-container-1 {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 140px 140px 140px;
+        width: 100%;
+        height: 600px;  
+      }
+      
+      .grid-item a button{
+        border-radius: 12px;
+        font: normal normal normal 20px/48px Helvetica;
+    }
+
+      .grid-item a button i{
+        font-size: 30px;
+    }
+}
 @media screen and (max-width: 790px) {
     .topnav a:not(:first-child) {
         display: none;
@@ -181,9 +302,26 @@ body {
         padding: 50px 50px 0px 100px;
         align-content: center;
     }
-    .overMij h1 {
+    .overMij h2 {
         margin-top: 50px;
         font: normal normal bold 50px/70px Cochin;
         color: #FFFFFF;
+    }
+
+    .grid-container-1 {
+        display: grid;
+        grid-template-columns:80%;
+        grid-template-rows: 150px 150px 150px 150px 150px 150px;
+        height:1050px;
+        padding: 10px;
+    
+      }
+      .grid-item a button{
+        border-radius: 15px;
+        font: normal normal normal 25px/48px Helvetica;
+    }
+
+      .grid-item a button i{
+        font-size: 35px;
     }
 }
