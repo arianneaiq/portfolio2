@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #000000;
     color: white;
+    
 }
 
 a{
@@ -132,16 +133,18 @@ ul a {
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
+    float: left;
 }
 
 .overMij h2 {
     margin-top: 100px;
     font: normal normal bold 50px/70px Cochin;
     color: #FFFFFF;
+    float: left;
 }
 
 h2{
-    font: normal normal bold 50px/50px Cochin;
+    font: normal normal bold 60px/50px Cochin;
     color: #ffffff;
     text-align: center;
 }
@@ -158,6 +161,11 @@ h2{
     align-content: space-evenly;
   }
 
+  .grid-item{
+    box-shadow: 0px 2px 4px #FFFFFF9A;
+    border-radius: 18px;
+  }
+
   .grid-item a button{
       width: 100%;
       height: 100%;
@@ -172,45 +180,150 @@ h2{
       font-size: 40px;
   }
 
-  .item1{
+  .item1-1{
     background: #FFEC9A 0% 0% no-repeat padding-box;
   }
 
-  .item2{
+  .item1-2{
     background: #E1B1FF 0% 0% no-repeat padding-box;
   }
 
-  .item3{
+  .item1-3{
     background: #FFBEEE 0% 0% no-repeat padding-box;
   }
 
-  .item4{
+  .item1-4{
     background: #C6FFD5 0% 0% no-repeat padding-box;
   }
 
-  .item5{
+  .item1-5{
     background: #FFC4C4 0% 0% no-repeat padding-box;
   }
 
-  .item6{
+  .item1-6{
     background: #A3C0FF 0% 0% no-repeat padding-box;
   }
 
   .grid-container-2{
       display: grid;
-      grid-template-columns: 50% 50%;
-    grid-template-rows: 300px 300px 300px;
-    padding: 10px 100px 10px 100px;
-    background-color: red;
+      grid-template-columns: 600px 600px;
+    grid-template-rows: 350px 350px 350px;
+    padding: 10px 100px 50px 100px;
     grid-gap:50px 80px;
     justify-content: center;
-
   }
 
   .grid-container-2 div{
-      background-color: rosybrown;
-      border: 1px blue;
+      border-radius: 18px;
   }
+
+  .item2-1{
+    background:url('img/MoviePosterH.jpg') center center;
+    background-size: cover;
+    box-shadow: 0px 2px 4px #FFFFFF9A;
+  }
+
+  .item2-2{
+    background:url('img/filterEffect.png') center center;
+    background-size: cover;
+    box-shadow: 0px 2px 4px #FFFFFF9A;
+  }
+
+  .item2-3{
+    background:url('img/portfolioH.png') center center;
+    background-size: cover;
+    box-shadow: 0px 2px 4px #FFFFFF9A;
+  }
+
+  .item3-1{
+    background:url('img/portfolioUx.png') center center;
+    background-size: cover;
+    box-shadow: 0px 2px 4px #FFFFFF9A;
+  }
+
+  .item3-2{
+    background:url('img/') center center;
+    background-size: cover;
+    box-shadow: 0px 2px 4px #FFFFFF9A;
+  }
+
+  .item3-3{
+    background:url('img/') center center;
+    background-size: cover;
+    box-shadow: 0px 2px 4px #FFFFFF9A;
+  }
+
+  h3{
+    text-align: left;
+    font: normal normal bold 38px/40px cochin;
+  }
+
+  p{
+    text-align: left;
+    font: normal normal normal 20px/40px Helvetica;
+  }
+
+  .item2-btn{
+    width: 230px;
+    height: 65px;
+    border: none;
+    background: #FE9898 0% 0% no-repeat padding-box;
+    border-radius: 10px; 
+    font: normal normal normal 20px/30px Helvetica;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  footer{
+     width: 100%;
+     height: 10%;
+     border-top: 2px white;
+    
+     text-align: center;
+  }
+
+  footer ul{
+    padding: 20px 40px 20px 40px;
+
+  }
+
+  footer ul a{
+    display: inline-block;
+    font: normal normal normal 20px/36px Helvetica;
+    margin: 0px 30px 0px 30px;
+  }
+
+@media screen and (max-width:1350px) {
+    .grid-container-2{
+        display: grid;
+        grid-template-columns: 550px 550px;
+      grid-template-rows: 300px 300px 300px;
+      padding: 10px 100px 50px 100px;
+      grid-gap:50px 80px;
+      justify-content: center;
+    }
+
+    .grid-container-2 div{
+        border-radius: 15px;
+    }
+
+    h3{
+        font: normal normal bold 30px/40px cochin;
+      }
+    
+      p{
+        font: normal normal normal 18px/30px Helvetica;
+      }
+    
+      .item2-btn{
+        width: 200px;
+        height: 55px;
+        border-radius: 8px; 
+        font: normal normal normal 20px/30px Helvetica;
+        margin-top: 5px;
+      }
+}
+
 
 @media screen and (max-width: 1200px) {
     .grid-container-1 {
@@ -228,9 +341,37 @@ h2{
     .grid-item a button i{
         font-size: 35px;
     }
+
+    .grid-container-2{
+        display: grid;
+        grid-template-columns: 460px 460px;
+      grid-template-rows: 250px 250px 250px;
+      padding: 10px 100px 50px 100px;
+      grid-gap:50px 80px;
+      justify-content: center;
+    }
+
+    .grid-container-2 div{
+        border-radius: 13px;
+    }
+
+    h3{
+        font: normal normal bold 28px/10px cochin;
+      }
+    
+      p{
+        font: normal normal normal 18px/25px Helvetica;
+      }
+    
+      .item2-btn{
+        width: 180px;
+        height: 50px;
+        border-radius: 10px; 
+        font: normal normal normal 15px Helvetica;
+      }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     .grid-container-1 {
         display: grid;
         grid-template-columns: 350px 350px;
@@ -247,8 +388,72 @@ h2{
       .grid-item a button i{
         font-size: 30px;
     }
+
+    .grid-container-2{
+        display: grid;
+        grid-template-columns: 420px 420px;
+      grid-template-rows: 200px 200px 200px;
+      padding: 10px 100px 50px 100px;
+      grid-gap:50px 80px;
+      justify-content: center;
+    }
+
+    .grid-container-2 div{
+        border-radius: 10px;
+    }
+
+    h3{
+        font: normal normal bold 23px/10px cochin;
+      }
+    
+      p{
+        font: normal normal normal 15px/25px Helvetica;
+      }
+    
+      .item2-btn{
+        width: 150px;
+        height: 40px;
+        border-radius: 6px; 
+        font: normal normal normal 12px Helvetica;
+      }
 }
-@media screen and (max-width: 790px) {
+
+@media screen and (max-width:950px){
+    .grid-container-2{
+        display: grid;
+        grid-template-columns: 750px;
+      grid-template-rows: 350px 250px 350px 250px 350px 250px;
+      padding: 10px 100px 100px 100px;
+      grid-gap:50px 80px;
+      justify-content: center;
+    }
+
+    .grid-container-2 div{
+        border-radius: 20px;
+    }
+
+    h3{
+        font: normal normal bold 30px/20px cochin;
+      }
+    
+      p{
+        font: normal normal normal 20px/30px Helvetica;
+      }
+    
+      .item2-btn{
+        width: 210px;
+        height: 50px;
+        border-radius: 10px; 
+        font: normal normal normal 18px Helvetica;
+      }
+
+      h2{
+        font: normal normal bold 50px/50px Cochin;
+        color: #ffffff;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 800px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -258,7 +463,7 @@ h2{
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 800px) {
     .topnav.responsive {
         position: relative;
     }
@@ -323,5 +528,39 @@ h2{
 
       .grid-item a button i{
         font-size: 35px;
+    }
+
+    .grid-container-2{
+        display: grid;
+        grid-template-columns: 500px;
+      grid-template-rows: 250px 200px 250px 200px 250px 200px;
+      padding: 10px 50px 100px 50px;
+      grid-gap:50px 80px;
+      justify-content: center;
+    }
+
+    .grid-container-2 div{
+        border-radius: 12px;
+    }
+
+    h3{
+        font: normal normal bold 25px/20px cochin;
+      }
+    
+      p{
+        font: normal normal normal 18px/30px Helvetica;
+      }
+    
+      .item2-btn{
+        width: 150px;
+        height: 40px;
+        border-radius: 7px; 
+        font: normal normal normal 15px Helvetica;
+      }
+
+      h2{
+        font: normal normal bold 40px/50px Cochin;
+        color: #ffffff;
+        text-align: center;
     }
 }
