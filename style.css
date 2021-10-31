@@ -47,41 +47,12 @@ ul a {
   color: #FE9898;
 }
 
-.homeMid {
-  position: absolute;
-  width: 632px;
-  height: 337px;
-  top: 50%;
-  left: 50%;
-  margin-left: -316px;
-  margin-top: -168.5px
-}
-
-.homeMid h1 {
-  position: relative;
-  text-align: center;
-  font: normal normal bold 100px/30px Cochin;
-  opacity: 1;
-  margin-top: 100px;
-}
-
-.homeMid h3 {
-  position: relative;
-  text-align: center;
-  font: normal normal normal 30px/0px Helvetica;
-  font-family: Helvetica;
-  color: #FFFFFF9F;
-  opacity: 1;
-  margin-bottom: 70px;
-}
-
 .leeruitkomstBtn, .overMijBtn {
-  position: relative;
   width: 250px;
   height: 70px;
   padding: 10px 40px 10px 40px;
   border-radius: 15px;
-  font: normal normal normal 25px/48px Helvetica;
+  font: normal normal normal 25px/25px Helvetica;
   text-align: center;
 }
 
@@ -448,6 +419,27 @@ footer ul a {
   background-size: cover;
 }
 
+.grid-container-6{
+  display: grid;
+  grid-template-columns: 700px;
+  justify-content: center;
+  padding: 100px;
+  align-content: center;
+}
+
+.grid-container-6 > div h1 {
+  text-align: center;
+  font: normal normal bold 100px/0px Cochin;
+  opacity: 1;
+
+}
+.grid-container-6 > div h4 {
+  text-align: center;
+  font: normal normal normal 35px/50px Helvetica;
+  font-family: Helvetica;
+  color: #FFFFFF9F;
+}
+
 @media screen and (max-width:1350px) {
   .grid-container-2 {
     display: grid;
@@ -525,8 +517,8 @@ footer ul a {
   }
   .grid-container-2 {
     display: grid;
-    grid-template-columns: 460px 460px;
-    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 480px 480px;
+    grid-template-rows: 300px 300px 300px;
     padding: 10px 100px 50px 100px;
     grid-gap: 50px 80px;
     justify-content: center;
@@ -589,8 +581,8 @@ footer ul a {
   }
   .grid-container-2 {
     display: grid;
-    grid-template-columns: 420px 420px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 500px 380px;
+    grid-template-rows: 300px 300px 300px;
     padding: 10px 100px 50px 100px;
     grid-gap: 50px 80px;
     justify-content: center;
@@ -645,6 +637,26 @@ footer ul a {
 
   .item2-3-14, .item2-3-15{
     height: 170px;
+  }
+
+  .grid-container-6{
+    grid-template-columns: 600px;
+  }
+  
+  .grid-container-6 > div h1 {
+    font: normal normal bold 80px/0px Cochin;
+  }
+  
+  .grid-container-6 > div h4 {
+    font: normal normal normal 30px/50px Helvetica;
+  }
+
+  .leeruitkomstBtn, .overMijBtn {
+    width: 195px;
+    height: 55px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 7.5px;
+    font: normal normal normal 18px/24px Helvetica;
   }
   
 }
@@ -738,28 +750,7 @@ footer ul a {
     display: block;
     text-align: left;
   }
-  .homeMid {
-    width: 400px;
-    height: 200px;
-    margin-left: -200px;
-    margin-top: -200px
-  }
-  .homeMid h1 {
-    font-size: 60px;
-  }
-  .homeMid h3 {
-    font-size: 20px;
-    margin-bottom: 45px;
-  }
-  .leeruitkomstBtn, .overMijBtn {
-    position: relative;
-    width: 165px;
-    height: 45px;
-    padding: 5px 20px 5px 20px;
-    border-radius: 7.5px;
-    font: normal normal normal 13px/24px Helvetica;
-    text-align: center;
-  }
+  
   .grid-container {
     display: grid;
     grid-template-columns: 400px;
@@ -846,5 +837,68 @@ footer ul a {
 
   .item2-3-14{
     height: 180px;
+  }
+
+  .grid-container-6{
+    grid-template-columns: 400px;
+  }
+  
+  .grid-container-6 > div h1 {
+    font: normal normal bold 60px/0px Cochin;
+  }
+  
+  .grid-container-6 > div h4 {
+    font: normal normal normal 20px/40px Helvetica;
+  }
+
+  .leeruitkomstBtn, .overMijBtn {
+    width: 160px;
+    height: 45px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 7.5px;
+    font: normal normal normal 15px/24px Helvetica;
+  }
+}
+
+@media screen and (max-width:450px){
+
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 180px 270px 180px 250px 180px 250px;
+    padding: 10px 50px 100px 50px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  h3 {
+    font: normal normal bold 20px/30px cochin;
+  }
+  p {
+    font: normal normal normal 15px/20px Helvetica;
+  }
+
+  .grid-container-6{
+    grid-template-columns: 250px;
+  }
+  
+  .grid-container-6 > div h1 {
+    font: normal normal bold 35px/0px Cochin;
+  }
+  
+  .grid-container-6 > div h4 {
+    font: normal normal normal 15px/30px Helvetica;
+  }
+
+  .leeruitkomstBtn, .overMijBtn {
+    width: 100px;
+    height: 30px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 7.5px;
+    font: normal normal normal 10px/12px Helvetica;
+  }
+
+  .grid-container-2, .grid-container-3, .grid-container-4, .grid-container-5 >div {
+    border-radius: 8px;
   }
 }
