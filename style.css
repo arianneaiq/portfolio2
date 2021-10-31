@@ -356,12 +356,10 @@ footer ul a {
   padding: 10px 100px 50px 100px;
   grid-gap: 30px 50px;
   justify-content: center;
-  background-color: rosybrown;
 }
  
 .grid-container-5 >div{
   border-radius: 18px;
-  background-color: saddlebrown;
 }
 
 .item2-3-1, .item2-3-18, .item2-3-19, .item2-3-20{
@@ -602,10 +600,10 @@ footer ul a {
     font: normal normal normal 18px/25px Helvetica;
   }
   .item2-btn {
-    width: 150px;
-    height: 40px;
+    width: 200px;
+    height: 50px;
     border-radius: 6px;
-    font: normal normal normal 12px Helvetica;
+    font: normal normal normal 15px Helvetica;
   }
   .grid-container-3 {
     grid-template-columns: 800px;
@@ -788,6 +786,7 @@ footer ul a {
   .grid-container-2, .grid-container-3, .grid-container-4, .grid-container-5 >div {
     border-radius: 12px;
   }
+  
   h3 {
     font: normal normal bold 25px/20px cochin;
   }
@@ -803,10 +802,10 @@ footer ul a {
   h2 {
     font: normal normal bold 30px/35px Cochin;
   }
-  .grid-container-3 {
-    grid-template-columns: 400px;
+  .grid-container-3, .grid-container-4, .grid-container-5, .grid-container-6{
+    grid-template-columns: 500px;
   }
-  
+
   .item2-1-2, .item2-1-5 {
     grid-column: 1 / span 2;
     height: 750px;
@@ -815,16 +814,8 @@ footer ul a {
     grid-column: 1/span 2;
   }
 
-  .grid-container-4{
-    grid-template-columns: 500px;
-  }
-
   .item2-2-1, .item2-2-2, .item2-2-3, .item2-2-4, .item2-2-5{
     height: 285px;
-  }
-
-  .grid-container-5 {
-    grid-template-columns: 500px;
   }
 
   .grid-container-5 >div{
@@ -837,10 +828,6 @@ footer ul a {
 
   .item2-3-14{
     height: 180px;
-  }
-
-  .grid-container-6{
-    grid-template-columns: 400px;
   }
   
   .grid-container-6 > div h1 {
@@ -878,8 +865,58 @@ footer ul a {
     font: normal normal normal 15px/20px Helvetica;
   }
 
-  .grid-container-6{
-    grid-template-columns: 250px;
+  .item2-btn {
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    font: normal normal normal 15px Helvetica;
+  }
+
+  .grid-container-3, .grid-container-4, .grid-container-5, .grid-container-6{
+    grid-template-columns: 300px;
+  }
+
+  .grid-container-3{
+    row-gap: 5px;
+  }
+
+  .grid-container-1 > div{
+    border-radius: 10px;
+  };
+
+  .grid-container-2 > div{
+    border-radius: 10px;
+  };
+
+  .grid-container-3 > div{
+    border-radius: 10px;
+  };
+
+  .grid-container-4 >div{
+    border-radius: 10px;
+  }
+  .grid-container-5 >div{
+    border-radius: 10px;
+  }
+  
+  .item2-1-2, .item2-1-5 {
+    height: 400px;
+  }
+
+  .grid-container-4{
+    row-gap: 20px;
+  }
+
+  .item2-2-1, .item2-2-2, .item2-2-3, .item2-2-4, .item2-2-5{
+    height: 170px;
+  }
+
+  .item2-3-2, .item2-3-4, .item2-3-6, .item2-3-8, .item2-3-10, .item2-3-12, .item2-3-16 {
+    height: 210px;
+  }
+
+  .item2-3-14{
+    height: 100px;
   }
   
   .grid-container-6 > div h1 {
@@ -896,9 +933,5 @@ footer ul a {
     padding: 0px 5px 0px 5px;
     border-radius: 7.5px;
     font: normal normal normal 10px/12px Helvetica;
-  }
-
-  .grid-container-2, .grid-container-3, .grid-container-4, .grid-container-5 >div {
-    border-radius: 8px;
   }
 }
