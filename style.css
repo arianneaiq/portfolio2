@@ -86,9 +86,8 @@ ul a {
   grid-template-rows: 600px;
   padding: 50px 50px 50px 100px;
   grid-gap: 0px 120px;
-  align-content: center;
+  justify-content: center;
 }
-
 .mijFoto {
   width: 400px;
   height: 600px;
@@ -97,20 +96,14 @@ ul a {
   border-radius: 23px;
   opacity: 1;
 }
-
+.overMij{
+  padding: 30px;
+}
 .overMij p {
-  text-align: left;
-  font: normal normal normal 20px/30px Helvetica;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  opacity: 1;
   float: left;
 }
 
 .overMij h2 {
-  margin-top: 100px;
-  font: normal normal bold 50px/70px Cochin;
-  color: #FFFFFF;
   float: left;
 }
 
@@ -420,8 +413,9 @@ footer ul a {
 .grid-container-6{
   display: grid;
   grid-template-columns: 700px;
+  grid-row: 900px;
   justify-content: center;
-  padding: 100px;
+  padding: 180px 100px 100px 100px;
   align-content: center;
 }
 
@@ -499,6 +493,25 @@ footer ul a {
 }
 
 @media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 400px 450px;
+    grid-template-rows: 600px;
+    padding: 50px 50px 50px 100px;
+    grid-gap: 0px 100px;
+    justify-content: center;
+  }
+  .mijFoto {
+    width: 400px;
+    height: 600px;
+    background: url('img/IMG_1769\ 2.jpg') center center;
+    background-size: cover;
+    border-radius: 23px;
+    opacity: 1;
+  }
+  .overMij{
+    padding: 30px;
+  }
+  
   .grid-container-1 {
     display: grid;
     grid-template-columns: 300px 300px 300px;
@@ -563,6 +576,25 @@ footer ul a {
 }
 
 @media screen and (max-width: 1050px) {
+  .grid-container {
+    grid-template-columns: 400px 350px;
+    grid-template-rows: 600px;
+    padding: 50px 50px 50px 100px;
+    grid-gap: 0px 80px;
+    justify-content: center;
+  }
+  .mijFoto {
+    width: 400px;
+    height: 600px;
+    background: url('img/IMG_1769\ 2.jpg') center center;
+    background-size: cover;
+    border-radius: 23px;
+    opacity: 1;
+  }
+  .overMij{
+    padding: 20px;
+  }
+  
   .grid-container-1 {
     display: grid;
     grid-template-columns: 350px 350px;
@@ -660,6 +692,25 @@ footer ul a {
 }
 
 @media screen and (max-width:950px) {
+  .grid-container {
+    grid-template-columns: 400px 300px;
+    grid-template-rows: 600px;
+    padding: 50px 50px 50px 50px;
+    grid-gap: 0px 50px;
+    justify-content: center;
+  }
+  .mijFoto {
+    width: 400px;
+    height: 600px;
+    background: url('img/IMG_1769\ 2.jpg') center center;
+    background-size: cover;
+    border-radius: 23px;
+    opacity: 1;
+  }
+  .overMij{
+    padding: 0px;
+  }
+
   .grid-container-2 {
     display: grid;
     grid-template-columns: 750px;
@@ -750,17 +801,25 @@ footer ul a {
   }
   
   .grid-container {
-    display: grid;
     grid-template-columns: 400px;
-    grid-template-rows: 600px 300px;
-    padding: 50px 50px 0px 100px;
+    grid-template-rows: 600px;
+    padding: 50px 50px 50px 100px;
+    grid-gap: 0px 80px;
     align-content: center;
+    justify-content: center;
   }
-  .overMij h2 {
-    margin-top: 50px;
-    font: normal normal bold 50px/70px Cochin;
-    color: #FFFFFF;
+  .mijFoto {
+    width: 400px;
+    height: 600px;
+    background: url('img/IMG_1769\ 2.jpg') center center;
+    background-size: cover;
+    border-radius: 23px;
+    opacity: 1;
   }
+  .overMij{
+    padding: 20px;
+  }
+
   .grid-container-1 {
     display: grid;
     grid-template-columns: 80%;
@@ -848,6 +907,24 @@ footer ul a {
 }
 
 @media screen and (max-width:450px){
+  .grid-container {
+    grid-template-columns: 300px;
+    grid-template-rows: 500px;
+    padding: 50px 50px 50px 50px;
+    align-content: center;
+    justify-content: center;
+  }
+  .mijFoto {
+    width: 300px;
+    height: 500px;
+    background: url('img/IMG_1769\ 2.jpg') center center;
+    background-size: cover;
+    border-radius: 23px;
+    opacity: 1;
+  }
+  .overMij{
+    padding: 0px;
+  }
 
   .grid-container-2 {
     display: grid;
