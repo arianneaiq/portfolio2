@@ -1,8 +1,8 @@
 body {
-  margin: 0;
   padding: 0;
   background-color: #000000;
   color: white;
+  margin-top: 120px;
 }
 
 a {
@@ -10,22 +10,26 @@ a {
 }
 
 .topnav {
+  position: fixed;
   overflow: hidden;
-  background-color: transparent;
+  background-color: #000000;
+  height: fit-content;
+  width: 100%;
+  padding: 20px 20px 0px 0px;
+  top:0;
+  left:0;
+  direction: rtl;
 }
 
 .topnav a {
-  float: right;
-  display: block;
-  text-align: center;
-  padding: 20px 40px;
+  padding: 10px 40px;
   color: white;
   text-decoration: none;
   font: normal normal normal 30px/48px Helvetica;
 }
 
 .topnav .logo {
-  float: left;
+float: inline-end;
 }
 
 .topnav a:hover {
@@ -36,10 +40,14 @@ a {
   display: none;
 }
 
+ul{
+  list-style-type: none;
+  display: flex;
+}
+
 ul a {
+  padding:0px 10px;
   text-decoration: none;
-  display: inline-block;
-  margin-right: 10px;
   font: normal normal normal 15px/0px Helvetica;
 }
 
@@ -128,9 +136,10 @@ h2 i {
 }
 
 .grid-item {
-  box-shadow: 0px 2px 4px #FFFFFF9A;
+ 
   border-radius: 18px;
 }
+
 
 .grid-item a button {
   width: 100%;
@@ -140,6 +149,10 @@ h2 i {
   font: normal normal normal 25px/48px Helvetica;
   color: black;
   border: none;
+}
+
+.grid-item a button:hover{
+  box-shadow: white 0 0 3px 3px;
 }
 
 .grid-item a button i {
@@ -239,7 +252,11 @@ p {
   text-align: center;
   margin-top: 20px;
 }
-
+.item2-btn:hover{
+  background: transparent 0% 0% no-repeat padding-box;
+  border: 2px solid #FE9898;
+  color: #FFFFFF;
+}
 footer {
   width: 100%;
   height: 10%;
@@ -413,10 +430,10 @@ footer ul a {
 .grid-container-6{
   display: grid;
   grid-template-columns: 700px;
-  grid-row: 900px;
   justify-content: center;
-  padding: 180px 100px 100px 100px;
+  padding: 100px 100px 100px 100px;
   align-content: center;
+  margin-top: 120px;
 }
 
 .grid-container-6 > div h1 {
@@ -692,6 +709,7 @@ footer ul a {
 }
 
 @media screen and (max-width:950px) {
+  
   .grid-container {
     grid-template-columns: 400px 300px;
     grid-template-rows: 600px;
@@ -786,8 +804,9 @@ footer ul a {
 }
 
 @media screen and (max-width: 800px) {
+  
   .topnav.responsive {
-    position: relative;
+    position: fixed;
   }
   .topnav.responsive .icon {
     position: absolute;
