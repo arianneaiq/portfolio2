@@ -259,17 +259,18 @@ p {
 }
 footer {
   width: 100%;
-  height: 10%;
+  height: fit-content;
   border-top: 2px white;
   text-align: center;
 }
 
 footer ul {
+  display: inline-block;
   padding: 20px 40px 20px 40px;
+  justify-content: center;
 }
 
 footer ul a {
-  display: inline-block;
   font: normal normal normal 20px/36px Helvetica;
   margin: 0px 30px 0px 30px;
 }
