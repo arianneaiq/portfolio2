@@ -45,11 +45,11 @@ ul{
   display: flex;
 }
 
-ul li{
+div ul li{
   border-right: 1px white solid;
 }
 
-ul a {
+div ul a {
   padding:0px 10px;
   text-decoration: none;
   font: normal normal normal 15px/0px Helvetica;
@@ -534,7 +534,7 @@ footer ul a {
 
 .grid-container-8 {
   display: grid;
-  grid-template-columns:80%;
+  grid-template-columns:50% 50%;
   padding: 10px 100px 100px 100px;
   grid-gap: 0px 100px;
   justify-content: center;
@@ -1133,8 +1133,13 @@ footer ul a {
     font: normal normal bold 25px/20px cochin;
   }
   p {
-    font: normal normal normal 18px/30px Helvetica;
+    font: normal normal normal 17px/30px Helvetica;
   }
+
+  h4 {
+    font: normal normal bold 20px/30px cochin;
+  }
+
   .item2-btn {
     width: 150px;
     height: 40px;
@@ -1142,7 +1147,7 @@ footer ul a {
     font: normal normal normal 15px Helvetica;
   }
   h2 {
-    font: normal normal bold 30px/35px Cochin;
+    font: normal normal bold 35px/35px Cochin;
   }
   .grid-container-3, .grid-container-4, .grid-container-5, .grid-container-6{
     grid-template-columns: 500px;
@@ -1312,6 +1317,11 @@ footer ul a {
   h3 {
     font: normal normal bold 20px/30px cochin;
   }
+
+  h4 {
+    font: normal normal bold 17px/30px cochin;
+  }
+
   p {
     font: normal normal normal 15px/20px Helvetica;
   }
