@@ -45,15 +45,16 @@ ul{
   display: flex;
 }
 
+ul li{
+  border-right: 1px white solid;
+}
+
 ul a {
   padding:0px 10px;
   text-decoration: none;
   font: normal normal normal 15px/0px Helvetica;
 }
 
-.active {
-  color: #FE9898;
-}
 
 .leeruitkomstBtn, .overMijBtn {
   width: 250px;
@@ -541,6 +542,18 @@ footer ul a {
 
 .grid-container-8 >div{
   height: fit-content;
+}
+
+.item8-1{
+  background: url('img/doelgroepOff.jpg') center center;
+  background-size: cover;
+  box-shadow: 0px 2px 4px #FFFFFF9A;
+}
+
+.item8-2{
+  background: url('img/photoLocation.png') center center;
+  background-size: cover;
+  box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 @media screen and (max-width:1350px) {
@@ -1226,6 +1239,10 @@ footer ul a {
 @media screen and (max-width: 600px){
   ul{
     display: inline-block;
+  }
+
+  ul li{
+    border-right: 0px white solid;
   }
 
   .grid-container-7 >div{
