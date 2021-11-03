@@ -504,8 +504,44 @@ footer ul a {
   margin-top: 40px;
 }
 
+.item5-1{
+  grid-column: 1/3;
+}
 
+.item5-2{
+  background: url('img/portfolioStructuur.png') center center;
+  background-size: cover;
+  height: 300px;
+}
 
+.item5-4{
+  background: url('img/portfolioOpmaak.png') center center;
+  background-size: cover;
+  height: 310px;
+}
+
+.item4-1{
+  background-color: white;
+  height: fit-content;
+  box-shadow: 0px 3px 10px #FFFFFF9A;
+  
+}
+
+.groepProject1{
+  grid-column: 1/3;
+}
+
+.grid-container-8 {
+  display: grid;
+  grid-template-columns:80%;
+  padding: 10px 100px 100px 100px;
+  grid-gap: 0px 100px;
+  justify-content: center;
+}
+
+.grid-container-8 >div{
+  height: fit-content;
+}
 
 @media screen and (max-width:1350px) {
   .grid-container-2 {
@@ -721,6 +757,14 @@ footer ul a {
     height: 200px;
     margin-top: 40px;
   }
+
+  .item5-2{
+    height: 280px;
+  }
+  
+  .item5-4{
+    height: 280px;
+  }
 }
 
 
@@ -873,6 +917,10 @@ footer ul a {
     margin-top: 40px;
   }
 
+  .item5-2, .item5-4{
+    height: 240px;
+  }
+
 }
 
 @media screen and (max-width:950px) {
@@ -989,6 +1037,10 @@ footer ul a {
   .item7-7{
     height: 160px;
     margin-top: 40px;
+  }
+
+  .item5-2, .item5-4{
+    height: 320px;
   }
 }
 
@@ -1134,8 +1186,6 @@ footer ul a {
     margin: 0px 8px 0px 8px;
   }
 
-  
-
   .grid-container-7 >div{
     border-radius: 10px;
   }
@@ -1166,6 +1216,10 @@ footer ul a {
   .item7-7{
     height: 100px;
     margin-top: 30px;
+  }
+
+  .item5-2, .item5-4{
+    height: 215px;
   }
 }
 
@@ -1345,5 +1399,9 @@ footer ul a {
   .item7-7{
     height: 50px;
     margin-top: 20px;
+  }
+
+  .item5-2, .item5-4{
+    height: 150px;
   }
 }

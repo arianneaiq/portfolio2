@@ -10,3 +10,4 @@ function myFunction() {
 function swapStyleSheet(sheet) {
     document.getElementById('lightmodestyle').setAttribute('href', sheet);
 }
+
