@@ -63,7 +63,6 @@ div ul li a:hover{
   color: #FF9898;
 }
 
-
 .leeruitkomstBtn, .overMijBtn {
   width: 250px;
   height: 70px;
@@ -96,6 +95,7 @@ div ul li a:hover{
   background: #FF9898 0% 0% no-repeat padding-box;
   color: #000;
 }
+
 
 .grid-container {
   display: grid;
@@ -223,6 +223,13 @@ h2 i {
   box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
+.item2-4 {
+  background: url('img/logodesign.png') center center;
+  background-size: cover;
+  box-shadow: 0px 2px 4px #FFFFFF9A;
+  height: 300px;
+}
+
 .item3-1 {
   background: url('img/portfolioUx.png') center center;
   background-size: cover;
@@ -329,7 +336,7 @@ footer ul li a {
   display: grid;
   grid-template-columns: 1240px;
   padding: 10px 100px 50px 100px;
-  grid-gap: 30px 50px;
+  grid-gap: 30px 20px;
   justify-content: center;
 }
 
@@ -444,24 +451,19 @@ footer ul li a {
 
 .grid-container-6{
   display: grid;
-  grid-template-columns: 700px;
+  grid-template-columns: 650px;
   justify-content: center;
-  padding: 100px 100px 100px 100px;
-  align-content: center;
+  padding: 0px 100px 100px 100px;
   margin-top: 120px;
-}
-
-.grid-container-6 > div h1 {
-  text-align: center;
-  font: normal normal bold 100px/0px Cochin;
-  opacity: 1;
 
 }
-.grid-container-6 > div h4 {
-  text-align: center;
-  font: normal normal normal 35px/50px Helvetica;
-  font-family: Helvetica;
-  color: #FFFFFF9F;
+
+
+.logoH{
+  position: relative;
+  left:20%;
+  width: 55%;
+  height: fit-content;
 }
 
 .grid-container-7{
@@ -1134,6 +1136,7 @@ footer ul li a {
     grid-gap: 50px 80px;
     justify-content: center;
   }
+
   .grid-container-2, .grid-container-3, .grid-container-4, .grid-container-5 >div {
     border-radius: 12px;
   }
@@ -1251,6 +1254,16 @@ footer ul li a {
 }
 
 @media screen and (max-width: 600px){
+
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 170px auto 180px 250px 180px 250px;
+    padding: 10px 50px 100px 50px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
   ul{
     display: inline-block;
   }
