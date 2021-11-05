@@ -13,16 +13,17 @@ a {
   position: fixed;
   overflow: hidden;
   background-color: #000000;
-  height: fit-content;
+  height:80px;
   width: 100%;
   padding: 20px 20px 0px 0px;
   top:0;
   left:0;
   direction: rtl;
+  align-items: center;
 }
 
 .topnav a {
-  padding: 10px 40px;
+  padding: 10px 30px;
   color: white;
   text-decoration: none;
   font: normal normal normal 30px/48px Helvetica;
@@ -38,6 +39,14 @@ float: inline-end;
 
 .topnav .icon {
   display: none;
+}
+
+.logo{
+  width: 200px;
+  height: fit-content;
+  top:0;
+  left:10px;
+  position: absolute;
 }
 
 ul{
@@ -108,7 +117,7 @@ div ul li a:hover{
 .mijFoto {
   width: 400px;
   height: 600px;
-  background: url('img/IMG_1769\ 2.jpg') center center;
+  background: url('img/myFoto.JPG') center center;
   background-size: cover;
   border-radius: 23px;
   opacity: 1;
@@ -458,7 +467,6 @@ footer ul li a {
 
 }
 
-
 .logoH{
   position: relative;
   left:20%;
@@ -469,7 +477,7 @@ footer ul li a {
 .grid-container-7{
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 10px 100px 50px 100px;
+  padding: 10px 80px 50px 80px;
   grid-gap: 0px 50px;
   justify-content: center;
 }
@@ -669,14 +677,7 @@ footer ul li a {
     grid-gap: 0px 100px;
     justify-content: center;
   }
-  .mijFoto {
-    width: 400px;
-    height: 600px;
-    background: url('img/IMG_1769\ 2.jpg') center center;
-    background-size: cover;
-    border-radius: 23px;
-    opacity: 1;
-  }
+
   .overMij{
     padding: 30px;
   }
@@ -800,14 +801,7 @@ footer ul li a {
     grid-gap: 0px 80px;
     justify-content: center;
   }
-  .mijFoto {
-    width: 400px;
-    height: 600px;
-    background: url('img/IMG_1769\ 2.jpg') center center;
-    background-size: cover;
-    border-radius: 23px;
-    opacity: 1;
-  }
+ 
   .overMij{
     padding: 20px;
   }
@@ -956,14 +950,7 @@ footer ul li a {
     grid-gap: 0px 50px;
     justify-content: center;
   }
-  .mijFoto {
-    width: 400px;
-    height: 600px;
-    background: url('img/IMG_1769\ 2.jpg') center center;
-    background-size: cover;
-    border-radius: 23px;
-    opacity: 1;
-  }
+  
   .overMij{
     padding: 0px;
   }
@@ -1082,17 +1069,23 @@ footer ul li a {
   
   .topnav.responsive {
     position: fixed;
+    height: fit-content;
   }
   .topnav.responsive .icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 20px;
   }
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+
+  .leeruitkomst{
+    margin-top: 90px;
+  }
+
   
   .grid-container {
     grid-template-columns: 400px;
@@ -1102,14 +1095,7 @@ footer ul li a {
     align-content: center;
     justify-content: center;
   }
-  .mijFoto {
-    width: 400px;
-    height: 600px;
-    background: url('img/IMG_1769\ 2.jpg') center center;
-    background-size: cover;
-    border-radius: 23px;
-    opacity: 1;
-  }
+  
   .overMij{
     padding: 20px;
   }
@@ -1318,7 +1304,7 @@ footer ul li a {
   .mijFoto {
     width: 300px;
     height: 500px;
-    background: url('img/IMG_1769\ 2.jpg') center center;
+    background: url('img/myFoto.JPG') center center;
     background-size: cover;
     border-radius: 23px;
     opacity: 1;
@@ -1427,26 +1413,26 @@ footer ul li a {
   }
 
   .item7-1 {
-    height: 150px;
+    height: 180px;
     border-radius: 5px;
   }
   
   .item7-2 {
-    height: 150px;
+    height: 180px;
     border-radius: 5px;
   }
   
   .item7-5{
-    height: 70px;
+    height: 80px;
   }
   
   .item7-6{
-    height: 70px;
+    height: 80px;
     margin-top: 20px;
   }
   
   .item7-7{
-    height: 50px;
+    height: 65px;
     margin-top: 20px;
   }
 
