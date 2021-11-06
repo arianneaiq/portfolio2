@@ -42,10 +42,10 @@ float: inline-end;
 }
 
 .logo{
-  width: 200px;
+  width: 55px;
   height: fit-content;
-  top:0;
-  left:10px;
+  top:5px;
+  left:5px;
   position: absolute;
 }
 
