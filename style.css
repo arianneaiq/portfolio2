@@ -24,6 +24,7 @@ a {
 }
 
 .topnav a { 
+  cursor: pointer;
   padding: 10px 30px;
   color: white;
   text-decoration: none;
@@ -245,14 +246,16 @@ h2 i {
   height: 300px;
 }
 
-.item3-1 {
-  background: url('img/portfolioUx.png') center center;
-  background-size: cover;
+
+.item3-1 > img{
+  width: 100%;
+  border-radius: 18px;
   box-shadow: 0px 0px 15px white;
+  height: 100%;
 }
 
 .item3-2 {
-  background: url('img/') center center;
+  background: url('img/filter4.JPG') center center;
   background-size: cover;
   box-shadow: 0px 0px 15px white;
 }
@@ -546,6 +549,13 @@ p {
   background: url('img/portfolioStructuur.png') center center;
   background-size: cover;
   height: 300px;
+ 
+}
+
+.item5-2 > img {
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px white;
+  width: 50%;
 }
 
 .item5-4 {
@@ -576,7 +586,6 @@ p {
   grid-gap: 0px 100px;
   justify-content: center;
 }
-
 
 
 .item8-1 {
@@ -652,6 +661,24 @@ p {
   background-size: cover;
 }
 
+.grid-container-9 {
+  display: grid;
+  grid-template-columns: 400px 400px 300px;
+  padding: 10px 100px 50px 100px;
+  grid-gap: 30px 50px;
+  justify-content: center;
+  
+}
+.item10-1{
+  width: 70%;
+  grid-column: 1/4;
+  text-align: left;
+}
+.item10-2 > img{
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0px 2px 4px #FFFFFF9A;
+}
 
 
 @media screen and (max-width:1350px) {
