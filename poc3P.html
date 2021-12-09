@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script defer src="script.js"></script>
+    <title>Arianne Xiang</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a class="logo" href="index.html">
+            <img src="img/logoKlein.svg"></img>
+        </a>
+        <a href="interactiveMedia.html">Interactive Media</a>
+        <a href="development.html">Development</a>
+        <a href="design.html">Design</a>
+        <a href="research.html"> Research </a>
+        <a href="communication.html">Communication</a>
+        <a href="professionalIdentity.html">Professional Identity</a>
+        <a href="overmij.html">Over mij</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h2> POC 3: The 24 game</h2>
+
+    <div class="grid-container-9">
+        <div class="item10-1">
+            <p> Deze game heb ik als kind van mijn ouders geleerd. Dit is echt een typishe chinese kaarten spel. Ik heb
+                gekozen om deze game te maken als poc 3, omdat dit vrijwel een mogelijk game is. Hiermee wil ik
+                mijzelf pushen om na te denken en beter te worden met javascript programmeren.
+                De source code kan je kijken op <a href="https://git.fhict.nl/I478617/se2-poc" target="_blank"
+                    class="active">Fontys Gitlab</a> onder naam van 'poc3'. Je kan hier ook de <a href="poc3.html"
+                    target="_blank" class="active">Demo</a> bekijken.
+            </p>
+            <h3>Spel regel </h3>
+            <p> De regels is:
+            <ul>
+                <li>Er is 4 spelers.</li>
+                <li>Er wordt gewerkt met 4 keer 10 kaarten van 1 tot 10.</li>
+                <li>Een ieder speler krijg tien willekeurige kaarten.</li>
+                <li>Een ieder speler geeft elke keer 1 kaart uit, dus in totaal 4 kaarten op tafel.</li>
+                <li>Probleem: hoe kom je d.m.v optelen, aftrekken, vermenigvuldigen of delen met deze 4 kaarten op 24.
+                    Elk kaart mag alleen 1 keer gebruikt worden. <br>
+                    Voorbeeld: de 4 kaarten zijn 6, 1, 3 en 4. <br>
+                    Dan is de oplossing: 6/ (1-3/4) = 24
+                </li>
+                <li>Wie op de eerste oplossing komt is de winner van die ronde.</li>
+                <li>Dit game eindigt wanneer niemand nog kaarten over heeft.</li>
+                <li>De uiteindelijke winnaar is degene die de meeste rondes gewonnen heeft. </li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/poc3-2.png" alt="">
+        </div>
+
+        <div>
+            <h3>Aanpak</h3>
+            <p>Om te beginnen met bouwen van dit game heb ik eerst de spel regels geschreven. Daarna heb ik stap voor
+                stap alle
+                details geschreven in de comments over wat ik wil maken, hoe ik het gaat maken en wat ik nodig heb.
+                Zo heb ik eerst alle plaatjes opgezocht en opgeslagen in een Array. Vervolgens heb ik de layout van het
+                game opgezet. Daarna ben ik aan de slag gegaan met eerste doel in de comment.
+        </div>
+
+        <div class="item10-5">
+            <img src="img/poc3-3.png" alt="">
+        </div>
+
+        <div>
+            <p>Na de eerste doel ben ik naar de tweede doel gegaan. Hier zat ik namelijk 2-3 dagen vast. Ik heb mijn
+                logica als comment opgeschreven bij regel 214 tot 216. Dus ik snap de logica wel maar de vertaling van
+                tekst naar code gaat mis. Ik was ook geweest naar Frank voor feedback. Hij vindt dat deze een hele goeie
+                proof of concept is. Hij heeft samen met mij naar de logica gekeken wat ik wil bereiken. De logica is
+                goed, alleen om op de code komen heb ik wat tijd nodig.
+                <br>
+                Na heel veel onderzoek naar hoe ik een random element uit een array weg kan halen en die kan opslaan in
+                een andere array en voorkomen dat niemand dezelfde kaarten krijgt, ben ik opnieuw naar mijn logica
+                gegaan. Toen realiseer ik een detail. Wanneer
+                je in realiteit kaarten speelt, shuffle je pak kaarten eerst. Dus daar is mijn denk fout geweest.
+                Ik moest eerst de array met de hele pak kaarten willekeurig maken en daarna die verdelen aan 4 (array's)
+                speler
+                zodoende heeft een ieder willekeurige en niet overeenkomde kaarten.
+            </p>
+
+        </div>
+        <div class="item10-5">
+            <img src="img/poc3-4.png" alt="">
+        </div>
+
+        <div>
+            <p>De derde doel is om bij elke druk op add my card button één van de omgedraaide kaarten weg te halen
+                en deze in het midden van de scherm te plaatsen. Hier heb ik met de kennis van poc 2 de buttons laten
+                deactiveren en activeren wanneer het moet zodat er niet meerdere keren op een button gedrukt kan worden.
+                Daarnaast heb ik een onderzoek gedaan naar <a
+                    href="https://www.w3schools.com/js/js_htmldom_navigation.asp" target="_blank"
+                    class="active">Parent-Child-Siblings relationship</a> om de verband in HTML te begrijpen en hoe je
+                dit kan veranderen met Javascript. Met deze kennis heb ik het probleem opgelost van het weghalen van één
+                omgedraaide kaart.
+
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <h3>Feedback</h3>
+            <p>Frank: "Hele goeie proof of concept! Voor mij hoeft de hele kaarten spel niet af, maar als je de array
+                probleem kan oplossen is het goed genoeg."
+            </p>
+
+            <h3>Wat heb ik geleerd?</h3>
+            <p>Ik heb geleerd:
+            <ul>
+                <li> hoe ik een for loop kan gebruiken.</li>
+                <li> hoe ik array kan randomizen. </li>
+                <li> hoe elementen van de ene Array in een ander Array kan opslaan. </li>
+                <li> Als je vast zit met vertalen van logica naar code, ga eens helemaal opnieuw beginnen om te kijken
+                    of de fout weleens bij de logica zit. </li>
+                <li> wat Parent-Child-Siblings relationship is en hoe je dat kan veranderen met JavaScript.</li>
+                <li> hoe ik een child element weg kan halen</li> 
+                <li> hoe ik plaatjes in een Array in volgorde kan laten zien.</li>
+            </ul>
+            </p>
+        </div>
+        <div class="item10-4">
+            <a href="poc1P.html" class="float-left"> <button class="item2-btn">Vorige project</button> </a>
+            <a href="poc3P.html" class="float-right"> <button class="item2-btn">Next project</button> </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

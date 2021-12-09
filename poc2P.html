@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script defer src="script.js"></script>
+    <title>Arianne Xiang</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a class="logo" href="index.html">
+            <img src="img/logoKlein.svg"></img>
+        </a>
+        <a href="interactiveMedia.html">Interactive Media</a>
+        <a href="development.html">Development</a>
+        <a href="design.html">Design</a>
+        <a href="research.html"> Research </a>
+        <a href="communication.html">Communication</a>
+        <a href="professionalIdentity.html">Professional Identity</a>
+        <a href="overmij.html">Over mij</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h2> POC 2: Rock Paper Scissors</h2>
+
+    <div class="grid-container-9">
+        <div class="item10-1">
+            <p> Poc 2 is een rock paper scissors game met computer en met 2 spelers. Deze heb ik volledig zelf
+                geprogrammeerd. De source code kan je kijken op <a href="https://git.fhict.nl/I478617/se2-poc"
+                    target="_blank" class="active">Fontys Gitlab</a> onder naam van 'poc2'. Je kan hier ook de <a href="poc2.html"
+                    target="_blank" class="active">Demo</a> bekijken.
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/poc2-1.png" alt="">
+        </div>
+        <div>
+            <h3>Aanpak van Rock Paper Scissors met computer </h3>
+            <p>Ik heb eerst deze poc gemaakt met teksten en daarna heb ik deze uitgebreid met plaatjes. Hier heb ik
+                uitgezocht hoe ik een plaatje in een Array kan doen en ook hoe je elke plaatje in het Array een naam kan
+                geven. </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/poc2-2.png" alt="">
+        </div>
+
+        <div>
+            <p>Ik heb ook een timebox gemaakt zodat de speler eerst kan nadenken. Dit heb ik gedaan door de methode
+                "setTimeout" te gebruiken.
+                Vervolgens heb ik gekeken hoe je een random plaatje uit een Array kan halen en dat te laten zien op de
+                website. Als laatst heb ik gekeken naar hoe je de plaatjes en teksten weg kan halen (resetten) op de
+                moment de
+                speler opnieuw begin met de game. </p>
+
+        </div>
+        <div class="item10-5">
+            <img src="img/poc2-3.png" alt="">
+        </div>
+
+        <div>
+            <h3>Aanpak van Rock Paper Scissors met 2 spelers</h3>
+            <p>Ik heb eerst twee buttons gemaakt en daarna heb ik gekeken hoe ik een button na het drukken kan
+                deactiveren
+                zodat de ene speler niet meerdere keren kan drukken, maar past wanneer de andere speler gespleed heeft
+                dan opnieuw kan spelen. Hiervoor heb ik de tutorials gevolgd van <a
+                    href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank" class="active">JS HTML DOM op
+                    w3school.com </a>.
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/poc2-4.png" alt="">
+        </div>
+
+        <div>
+            <p>Voor het beslissen van winnaar heb ik gebruik gemaakt van if else statement. Eerst had ik "==" gebruikt
+                in de condition, maar de resultaat valt tegen mijn verwachting. Na heel veel gevecht met if else
+                statementen, random en Array kwam ik er achter dat je "===" moet gebruiken, omdat "===" nauwkeuriger is
+                dan "==".
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <h3>Feedback</h3>
+            <p>Frank: "Goed bezig! Zo leer je ook echt zelf programmeren. Goed dat je direct bent begonnen met zelf
+                poc's te maken en niet tutorials blijven kijken op Youtube en andermans code te kopieëren. Daar leer je
+                niks van. Heel goed dat je stap voor stap kijk wat je wilt maken. Zo maak je van een kleine poc's tot
+                grotere poc's."
+
+                Ik zat toen vast met resetten/weghalen van plaatjes en teksten. Frank gaf me een hint en toen snap ik
+                het direct. Hij gaf ook als tip om soms terug te kijken naar je eigen code, want sommige kleine
+                problemen kan je oplossen door in je eigen codes te spieken.
+
+                Als feedback voor mijn code gaf hij om zo veel mogelijk dezelfde codes weg te halen en de codes kort en
+                overzichtelijk te houden.
+            </p>
+
+            <h3>Wat heb ik geleerd?</h3>
+            <p>Ik heb geleerd:
+            <ul>
+                <li> hoe ik een plaatje in een Array kan doen en elke plaatje een naam kan geven.</li>
+                <li> hoe ik met een functie een ander functie kan oproepen. </li>
+                <li> hoe ik met een methode een ander functie kan oproepen. </li>
+                <li> hoe ik een random element uit een Array kan halen.</li>
+                <li> wat Document Object Model is.</li>
+                <li> hoe ik een button kan deactiveren of activeren.</li>
+                <li> hoe Javascript condition werkt.</li>
+                <li>wat het verschil is tussen "===" en "==".</li>
+            </ul>
+            </p>
+        </div>
+        <div class="item10-4">
+            <a href="poc1P.html" class="float-left"> <button class="item2-btn">Vorige project</button> </a>
+            <a href="poc3P.html" class="float-right"> <button class="item2-btn">Next project</button> </a>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

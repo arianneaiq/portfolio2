@@ -17,10 +17,10 @@ function start() {
     document.getElementById("img").src = "";
 
     let myLet;
-    myLet = setTimeout(start1, 1000);
-    myLet = setTimeout(start2, 2000);
-    myLet = setTimeout(start3, 3000);
-    myLet = setTimeout(start4, 4000);
+    myLet = setTimeout(start1, 500);
+    myLet = setTimeout(start2, 1000);
+    myLet = setTimeout(start3, 1500);
+    myLet = setTimeout(start4, 2000);
 
     function start1() {
         document.getElementById("demo").innerHTML = "Rock";
@@ -41,8 +41,6 @@ function start() {
     }
 }
 
-let rnm1;
-let rnm2;
 let rnm1Image;
 let rnm2Image;
 
