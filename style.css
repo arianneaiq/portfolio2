@@ -487,7 +487,6 @@ p {
   text-align: left;
 }
 
-
 .item7-1 {
   background: url('img/portfolioUX1.png') center center;
   background-size: cover;
@@ -527,6 +526,14 @@ p {
   background-size: cover;
   height: 180px;
   margin-top: 40px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px white;
+}
+
+.item7-8 >img{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
   border-radius: 18px;
   box-shadow: 0px 0px 10px white;
 }
@@ -592,6 +599,12 @@ p {
 
 .item8-2 {
   background: url('img/photoLocation.png') center center;
+  background-size: cover;
+  box-shadow: 0px 2px 4px #FFFFFF9A;
+}
+
+.item8-3 {
+  background: url('img/APA-Stijl-2.png') center center;
   background-size: cover;
   box-shadow: 0px 2px 4px #FFFFFF9A;
 }
@@ -700,6 +713,13 @@ p {
   grid-column: 1/4;
 }
 
+iframe{
+  width:100%;
+  height: 100%;
+  border: none;
+  box-shadow: 0px 2px 4px #FFFFFF9A;
+  border-radius: 18px;
+}
 
 @media screen and (max-width:1350px) {
   .grid-container-2 {
