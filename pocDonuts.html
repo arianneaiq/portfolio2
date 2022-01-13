@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script defer src="script.js"></script>
+    <title>Arianne Xiang</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a class="logo" href="index.html">
+            <img src="img/NavLogo1.svg"></img>
+        </a>
+        <a href="interactiveMedia.html">Interactive Media</a>
+        <a href="development.html">Development</a>
+        <a href="design.html">Design</a>
+        <a href="research.html"> Research </a>
+        <a href="communication.html">Communication</a>
+        <a href="professionalIdentity.html">Professional Identity</a>
+        <a href="overmij.html">Over mij</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h2>Advanced development: Donuts </h2>
+
+    <div class="grid-container-9">
+        <div class="item10-1">
+            <p>Dit is mijn eerste PoC voor Advanced development: 3 rond draaiende donuts. Klik <a href="dist_donuts/index.html" class="active">hier</a> voor de demo. De source code kan je kijken op <a href="https://git.fhict.nl/I478617/advanced-development-se2"
+                    target="_blank" class="active">Fontys
+                    Gitlab</a>.
+            </p>
+
+            <h3>Onderzoek</h3>
+            <p> Ik heb ondezoek gedaan naar verschillende libraries voor het maken van 3D website. Voor de onderzoek kun je <a href="devSprintXresearch.html" class="active">hier</a> verder lezen.
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/threejs.jpg" alt="">
+        </div>
+        <div>
+            <h3>Aanpak</h3>
+            <p>Ik ben eerst aan de slag gegaan met de documentatie van <a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene" target="_blank" class="active">Three.js</a>. Vervolgens heb ik Three.Js geinstalleerd met cdn. Daarna
+                heb ik de basis van een 3D website opgezet namelijk scene, camera, object en renderer. </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="dist_donuts/img/donutsTexture4.jpg" alt="">
+        </div>
+
+        <div>
+            <p>In de documentatie van three.js heb ik gekeken naar verschillende <a href="https://threejs.org/docs/index.html?q=geo#api/en/geometries/TorusGeometry" target="_blank" class="active">geometries(objecten)</a> die er bestaan. Ik heb gekozen voor
+                eem TorusGeometry, omdat ik in gedachte had om een donuts ervan te maken. De foto hiernaast is een donuts texture die ik uit het internet gehaald heb en rondom de objects gezet heb. Ik heb er in totaal 3 donuts met 3 verschillende texture
+                gemaakt. Ik heb ook de achtergrond van de scene veranderd. </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/donutsAnimate.jpg" alt="">
+        </div>
+
+        <div>
+            <p>
+                Als laatst heb ik de 3 donuts laten draaien opzichzelf in verschillende richtingen. Ook heb de donuts in een group gezet zodat de linker en rechter donuts om de middelste donuts kan draaien. Ik heb gebruikt gemaakt van <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame"
+                    target="_blank" class="active">window.requestAnimationFrame()</a> om bij elke frame dit functie opnieuw to roepen en zo krijg je een oneidige loop waardoor je de animatie kan zien.
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/windowRequest.jpg" alt="">
+        </div>
+
+        <div>
+            <h3>Framerate probleem</h3>
+            <p>Zoals je op de console kunt zien, wordt op elk frame het 'animateDonuts' aangeroepen. Test je deze code op een computer met een hoge framerate, dan verschijnt het 'animateDonuts' met een hogere frequentie. Het probleem is dat als je deze code
+                test op een computer met een hoge framerate, de donuts sneller zal draaien, en als je test op een lagere framerate, zal de donuts langzamer draaien. Kortom, de animatie ziet er anders uit op elke device. De oplossing hiervoor kun je vinden
+                bij de volgende PoC.</p>
+        </div>
+        <div class="item10-5">
+            <h3>Wat heb ik geleerd?</h3>
+            <p>Ik heb geleerd hoe three.js werkt en hoe ik de basis setup kunt doen voor een 3D website. Verder heb ik geleerd hoe je de objecten kunt animeren. Ook heb ik heel toevallig de framerate probleem ontdekt doordat ik het website zowel op mijn
+                pc als op mijn MacBook Pro had uitgetest. </p>
+        </div>
+        <div class="item10-4">
+            <a href="specialWeek.html" class="float-left"> <button class="item2-btn">Vorige project</button> </a>
+            <a href="pocHemel.html" class="float-right"> <button class="item2-btn">Next project</button> </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

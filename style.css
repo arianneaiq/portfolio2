@@ -226,45 +226,42 @@ h2 i {
 .item2-1 {
     background: url('img/MoviePosterH.jpg') center center;
     background-size: cover;
-    box-shadow: 0px 0px 10px white;
 }
 
 .item2-2 {
     background: url('img/filterEffect.png') center center;
     background-size: cover;
-    box-shadow: 0px 0px 10px white;
 }
 
 .item2-3 {
     background: url('img/portfolioH.png') center center;
     background-size: cover;
-    box-shadow: 0px 0px 10px white;
 }
 
 .item2-4 {
     background: url('img/logodesign.png') center center;
     background-size: cover;
-    box-shadow: 0px 0px 10px white;
     height: 300px;
+}
+
+.white_border {
+    border: 0.1px solid #ada9a9;
 }
 
 .item3-1>img {
     width: 100%;
     border-radius: 18px;
-    box-shadow: 0px 0px 15px white;
     height: 100%;
 }
 
 .item3-2 {
     background: url('img/filter4.JPG') center center;
     background-size: cover;
-    box-shadow: 0px 0px 15px white;
 }
 
 .item3-3 {
     background: url('img/') center center;
     background-size: cover;
-    box-shadow: 0px 0px 15px white;
 }
 
 h3 {
@@ -326,14 +323,12 @@ p {
     height: 1300px;
     background: url('img/movie\ poster\ 1.jpg') center center;
     background-size: cover;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 .item2-1-5 {
     height: 1300px;
     background: url('img/MoviePoster.jpg') center center;
     background-size: cover;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 .item2-1-10 {
@@ -359,7 +354,6 @@ p {
 .item2-2-4,
 .item2-2-5 {
     height: 700px;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 .item2-2-1 {
@@ -430,7 +424,6 @@ p {
 .item2-3-12,
 .item2-3-16 {
     height: 520px;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 .item2-3-2 {
@@ -467,7 +460,6 @@ p {
     background: url('img/feedbackPortfolio.png') center center;
     background-size: cover;
     height: 250px;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 .item2-3-15 {
@@ -506,7 +498,6 @@ p {
     background-size: cover;
     height: 500px;
     border-radius: 18px;
-    box-shadow: 0px 0px 10px white;
 }
 
 .item7-2 {
@@ -514,7 +505,6 @@ p {
     background-size: cover;
     height: 500px;
     border-radius: 18px;
-    box-shadow: 0px 0px 10px white;
 }
 
 .item7-5 {
@@ -523,7 +513,6 @@ p {
     height: 230px;
     margin-top: 40px;
     border-radius: 18px;
-    box-shadow: 0px 0px 10px white;
 }
 
 .item7-6 {
@@ -532,7 +521,6 @@ p {
     height: 230px;
     margin-top: 40px;
     border-radius: 18px;
-    box-shadow: 0px 0px 10px white;
 }
 
 .item7-7 {
@@ -541,7 +529,6 @@ p {
     height: 180px;
     margin-top: 40px;
     border-radius: 18px;
-    box-shadow: 0px 0px 10px white;
 }
 
 .item7-8>img {
@@ -549,7 +536,6 @@ p {
     height: 100%;
     margin-bottom: 40px;
     border-radius: 18px;
-    box-shadow: 0px 0px 10px white;
 }
 
 .item5-1 {
@@ -570,7 +556,6 @@ p {
 
 .item5-2>img {
     border-radius: 18px;
-    box-shadow: 0px 0px 10px white;
     width: 50%;
 }
 
@@ -583,7 +568,6 @@ p {
 .item4-1 {
     background-color: white;
     height: fit-content;
-    box-shadow: 0px 3px 10px #FFFFFF9A;
 }
 
 .item4-1>iframe {
@@ -598,19 +582,16 @@ p {
 .item8-1 {
     background: url('img/doelgroepOff.jpg') center center;
     background-size: cover;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 .item8-2 {
     background: url('img/photoLocation.png') center center;
     background-size: cover;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 .item8-3 {
     background: url('img/APA-Stijl-2.png') center center;
     background-size: cover;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 .grid-container-8 {
@@ -639,7 +620,6 @@ p {
 .item9-7,
 .item9-8 {
     height: 570px;
-    box-shadow: 0px 3px 5px #FFFFFF9A;
 }
 
 .item9-2,
@@ -647,7 +627,6 @@ p {
 .item9-4,
 .item9-5 {
     height: 400px;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 .item9-2 {
@@ -700,7 +679,12 @@ p {
 
 .item10-5>img {
     border-radius: 18px;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
+    width: 100%;
+    height: 100%;
+}
+
+.item10-5>video {
+    border-radius: 18px;
     width: 100%;
     height: 100%;
 }
@@ -709,12 +693,10 @@ p {
     width: 100%;
     height: 700px;
     border-radius: 18px;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
 }
 
 .item10-3>img {
     border-radius: 18px;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
     width: 100%;
     height: 100%;
 }
@@ -727,7 +709,6 @@ iframe {
     width: 100%;
     height: 100%;
     border: none;
-    box-shadow: 0px 2px 4px #FFFFFF9A;
     border-radius: 18px;
 }
 

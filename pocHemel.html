@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script defer src="script.js"></script>
+    <title>Arianne Xiang</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a class="logo" href="index.html">
+            <img src="img/NavLogo1.svg"></img>
+        </a>
+        <a href="interactiveMedia.html">Interactive Media</a>
+        <a href="development.html">Development</a>
+        <a href="design.html">Design</a>
+        <a href="research.html"> Research </a>
+        <a href="communication.html">Communication</a>
+        <a href="professionalIdentity.html">Professional Identity</a>
+        <a href="overmij.html">Over mij</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h2>Advanced development: Hemel </h2>
+
+    <div class="grid-container-9">
+        <div class="item10-1">
+            <p>Dit is mijn tweede PoC voor Advanced development: Hemel. Klik <a href="dist_hemel/index.html" class="active">hier</a> voor de demo. De source code kan je kijken op <a href="https://git.fhict.nl/I478617/advanced-development-poc-2-hemel" target="_blank"
+                    class="active">Fontys
+                    Gitlab</a>.
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/npm.jpg" alt="">
+        </div>
+        <div>
+            <h3>Npm installatie </h3>
+            <p>Bij deze poc heb ik geen gebruik gemaakt van CDN installatie, maar npm package. De manier waarop ik three.js in de vorige poc heb geladen is het gemakkelijkst manier. Helaas heeft het enkele beperkingen. Het bevat niet alle Three.js classes,
+                omdat het bestand te zwaar zou zijn. Hiervoor heb ik gekozen voor installatie met npm package in plaats van cdn om de verborgen classes te laden. Ook had ik een lokale server nodig om de afbeeldingen te laden en te manipuleren. Er zijn
+                veel manieren om deze problemen op te lossen. Ik heb gekozen voor webpack bundler, omdat dit het eenvoudigste manier is. De onderzoek hiernaar kun je <a href="devSprintXresearch.html" class="active">hier</a> lezen. </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/framerateOplossing.jpg" alt="">
+        </div>
+
+        <div>
+            <h3>Framerate oplossing</h3>
+            <p>In de vorige PoC had ik het over Framerate probleem. In deze poc heb ik dit probleem opgelost door gebruikt te maken van een ingebouwde oplossing in Three.js genaamd THREE.Clock() die de tijdberekeningen afhandelt. Deze methode geeft aan hoeveel
+                seconden er zijn verstreken sinds de klok is gemaakt. Door de animatie gelijk te stellen aan de tijd, animeer de animatie met de snelheid van de tijd in plaats van de framerate.
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/pixelRatio.jpg" alt="">
+        </div>
+
+        <div>
+            <h3>Pixel ratio probleem en oplossing</h3>
+            <p> Sommige mensen zullen een wazige renderer kunnen ervaren doordat hun scherm een pixel ratio hoger dan 1 zijn. Een pixel ratio van 2 betekent 4 keer meer pixels om te renderen. En een pixel ratio van 3 betekent 9 keer meer pixels om te renderen.
+                Een hogere pixel ratio is goed voor goeie foto kwaliteit, maar het zal performance problemen veroorzaken en de batterijen van de device lopen sneller leeg. Hiervoor heb ik de pixel ratio beperkt tot 2 om dit probleem op te lossen. Bovendien,
+                onze ogen zien bijna geen verschil tussen pixel ratio van 2 en 3.
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/resize.jpg" alt="">
+        </div>
+
+        <div>
+            <h3>Media queries</h3>
+            <p>Voor het oplossen van resize problemen had ik een code gevonden op <a href="https://stackoverflow.com/questions/20290402/three-js-resizing-canvas" target="_blank" class="active">stackoverflow.com</a>. Het bleekt goed te werken dus heb ik voor
+                verdere PoC's ook deze code gebruikt.</p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/controls.jpg" alt="">
+        </div>
+
+        <div>
+            <h3>GUI Debugger</h3>
+            <p>Ik heb gebruik gemaakt van een JavaScript library genaamd <a href="https://lil-gui.georgealways.com/" target="_blank" class="active">lil-gui</a> om te debuggen. Met deze library kun je soort van real life debuggen. Dit maakt het makkelijker,
+                overzichtelijker en sneller om de juiste getallen te krijgen voor een positie of een rotatie en etc.
+            </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/orbitController.jpg" alt="">
+        </div>
+
+        <div>
+            <h3>OrbitControls</h3>
+            <p>Ik wilde mijn aarde interactive maken door op mijn muis te reageren. Hiervoor had ik nog een berekening voor gemaakt en ook op internet gezocht. Mijn codes werken wel, maar ik had een makkelijkere manier gevonden op internet. </p>
+        </div>
+
+        <div class="item10-5">
+            <img src="img/orbitController1.jpg" alt="">
+        </div>
+
+        <div>
+            <p>Er is namelijk een ingebouwde methode in three.js genaamd <a href="https://lil-gui.georgealways.com/" target="_blank" class="active">OrbitControls</a> die alle berekeningen gedaan hebbben. De enige wat je moet doen is op te roepen. </p>
+        </div>
+
+        <div class="item10-5">
+            <h3>Feedback</h3>
+            <p>Frank: "Hele goeie onderzoek gedaan naar het oplossen van problemen zoals Framerate. Er is sowieso iets in de library die zorgt voor reageren op de muis. Daarom bestaan libraries. Goed dat je ook GUI debugger gebruikt, zo heb je meer overzicht
+                en controle over wat je aan het doen ben. </p>
+            <h3>Wat heb ik geleerd?</h3>
+            <p>Ik heb geleerd over CDN, NPM, NodeJs, Webpack, GUI Debugger, performance problemen zoals framerate, pixel ratio en media queries op te lossen. Daarnaast heb ik ook geleerd hoe je een object interactive kan maken met OrbitControls. </p>
+        </div>
+        <div class="item10-4">
+            <a href="pocDonuts.html" class="float-left"> <button class="item2-btn">Vorige project</button> </a>
+            <a href="pocLights.html" class="float-right"> <button class="item2-btn">Next project</button> </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
