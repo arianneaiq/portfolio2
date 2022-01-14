@@ -25,10 +25,10 @@ a {
 
 .topnav a {
     cursor: pointer;
-    padding: 10px 30px;
+    padding: 10px 25px;
     color: white;
     text-decoration: none;
-    font: normal normal normal 18px/28px Helvetica;
+    font: normal normal normal 16px Helvetica;
 }
 
 .topnav .logo {
@@ -41,7 +41,7 @@ a {
 
 .topnav .icon {
     display: none;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .logo {
