@@ -28,7 +28,7 @@ a {
     padding: 10px 25px;
     color: white;
     text-decoration: none;
-    font: normal normal normal 16px Helvetica;
+    font: normal normal normal 16px/25px Helvetica;
 }
 
 .topnav .logo {
